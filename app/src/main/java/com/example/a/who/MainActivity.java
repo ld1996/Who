@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mySharedPreferences=getSharedPreferences("SETTING_INFOS",0);
         //使SharedPreferences处于编辑状态
         SharedPreferences.Editor editor=mySharedPreferences.edit();
-        editor.putString("pasword",E_pasword.getText().toString())
+        editor.putStrinug("pasword",E_pasword.getText().toString())
                 .putString("usename", E_usename.getText().toString());
         //使用commit方法提交修改的数据
         editor.commit();
